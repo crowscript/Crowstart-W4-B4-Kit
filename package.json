@@ -4,9 +4,9 @@
   "description": "This is a starter kit of Webpack 4 with Bootstrap 4",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server  --config webpack.dev.js --open chrome",
-    "build": "webpack --config webpack.prod.js",
-    "server": "webpack-dev-server --config webpack.dev.js --open chrome --watch"
+    "start": "webpack-dev-server  --config webpack.dev.js --open chrome --watch",
+    "build": "webpack --config webpack.prod.js"
+    // "server": "webpack-dev-server --config webpack.dev.js --open chrome --watch"
   },
   "keywords": [],
   "author": "Stanislav Vranic - Crowscript",

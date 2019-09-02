@@ -13,7 +13,7 @@ https://hackerthemes.com/bootstrap-cheatsheet/
 
 ## Table of Contents   
 ---
-- [# Crowstart W4-B4 Kit](#crowstart-w4-b4-kit)
+- [# Crowstart W4-B4 Kit](#Crowstart-W4-B4-Kit)
 - [## Table of Contents](#table-of-contents)
 - [## About the Project](#about-the-project)
 - [## Status](#status)
@@ -93,16 +93,16 @@ The main benefit is creating separate files in separate folders, which is excell
 
 ## Getting Started
 ---
-This section provide instructions for other developers how to use Crowstart W4-B4 Kit v1.0
+This section provide instructions for other developers how to use Crowstart W4-B4 Kit (Webpack 4 & Bootstrap 4)
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 - If needed, [install](http://blog.nodeknockout.com/post/65463770933/how-to-install-node-js-and-npm) `node` and `npm` (Node Package Manager).
-- Clone this repo with `git clone https://github.com/crowscript/webpack-4_starter-kit.git` or download the zip. For this step, use npm terminal.
+- Clone this repo with `git clone https://github.com/crowscript/Crowstart-W4-B4-Kit.git` or download the zip. For this step, use npm terminal.
 - In terminal, `cd` to the folder containing your project. Alternatively, you can type `cd ` and drag the location of the folder into your terminal and hit enter.
 - In terminal, type `npm install`. If (and _only_ if) `npm install` isn't working, try `sudo npm install`. This should install all [dependencies](#dependencies).
-- In terminal, enter `npm run build` to make dist folder or/and `npm run server` for server start (server itself won't to make dist folder).
-- Open in your browser this link `http://localhost:8080`.!
+- In terminal, `npm run start` for server start (server itself won't to make dist folder, but all changes is visiable in browser) or/and enter `npm run build` to make dist folder.
+- If Browser is not opened automaticly, please open in your browser this link `http://localhost:3000`.!
 - Edit your code inside of the `src` folder.
 - Your complied css, html, and javascript files will be created and updated in `dist/`. Never edit files within the `dist/` folder, as it gets deleted frequently.
 - When you want to stop the webpack server, hit `ctrl + C`.
@@ -127,7 +127,7 @@ How to install the requirements.
 
 `npm install`
 
-**tl;dr**: [Download Crowstart W4-B4 Kit](https://github.com/crowscript/crowstart-w4-b4-kit.git) and run `npm install` in that directory to get started.
+**tl;dr**: [Download Crowstart W4-B4 Kit](https://github.com/crowscript/Crowstart-W4-B4-Kit.git) and run `npm install` in that directory to get started.
 
 To take advantage of Crowstart W4-B4 Kit you need to:
 
@@ -140,20 +140,32 @@ To take advantage of Crowstart W4-B4 Kit you need to:
 ### Dependencies
 Dependencies that need to be installed for building/using your project
 ```
+    "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
+    "autoprefixer": "^9.5.0",
     "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^2.0.1",
     "css-loader": "^2.1.1",
+    "cssnano": "^4.1.10",
     "file-loader": "^3.0.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.1"
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
+  },
 ```
 #### How install Dependencies
 All dependencies are will be installed with:
@@ -163,7 +175,7 @@ npm install
 
 ## How to Use
 ---
-Open in your favorite code editor folder **crowstart-w4-b4-kit** and start editing files in `src` folder.
+Open in your favorite code editor folder **Crowstart-W4-B4-Kit** and start editing files in `src` folder.
 If you want to change something in Webpack 
 
 ### webpack.config.js
@@ -194,6 +206,15 @@ in `.gitignore` file in the line 59 you can find  **Build Systems** below of it 
 - More on global ignores: https://help.github.com/articles/ignoring-files/
 - Comprehensive set of ignores on GitHub: https://github.com/github/gitignore
 
+### Git commands
+#### Push changes to a Git repository
+- Create your new files or edit existing files in `src` project directory.
+- From the command line, enter `git status` so that you can check changes.
+- Enter `git add .` at the command line to add the files or changes to the repository.
+
+- Enter `git commit -m 'commit_message'` at the command line to commit new files/changes to the local repository. For the `commit_message` , you can enter anything that describes the changes you are committing.
+- Enter `git push`  at the command line to copy your files from your local repository to remote repository (Github, Bitbucket etc).
+- If prompted for authentication, enter your password.
 
 
 ## Changelog
