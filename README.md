@@ -1,6 +1,6 @@
 # Crowstart W4-B4 Kit
 ---
-This is a very basic starter kit for project with Bootstrap 4 as a CSS framework and Webpack 4 as a module bundler.
+This is a very basic starter kit for the project with Bootstrap 4 as a CSS framework and Webpack 4 as a module bundler.
 
 ## Table of Contents   
 ---
