@@ -83,11 +83,15 @@ The main benefit is creating separate files in separate folders, which is excell
 │   ├── about.html
 │   └── index.html
 ├── .gitignore
+├── .gitkeep
 ├── LICENSE
 ├── package-lock.json
 ├── package.json
+├── postcss.config.js
 ├── README.md
-└── webpack.config.js
+├── webpack.common.js
+├── webpack.dev.js
+└── webpack.prod.js
 
 ```
 
