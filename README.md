@@ -1,15 +1,5 @@
 # Crowstart W4-B4 Kit
 ---
-What is added: 
-
-npm install bootstrap --save
-npm install --save jquery popper.js
-npm i -D postcss-loader
-npm install --save-dev webpack-merge
-npm install --save-dev clean-webpack-plugin
-
-https://www.postcss.parts/
-https://hackerthemes.com/bootstrap-cheatsheet/
 
 ## Table of Contents   
 ---
@@ -30,6 +20,8 @@ https://hackerthemes.com/bootstrap-cheatsheet/
   - [.gitkeep](#gitkeep)
   - [.gitignore](#gitignore)
   - [Git commands](#git-commands)
+  - [Bootstrap](#bootstrap)
+  - [PostCSS](#postcss)
 - [Changelog](#changelog)
 - [Authors](#authors)
 - [License](#license)
@@ -221,6 +213,14 @@ in `.gitignore` file in the line 59 you can find  **Build Systems** below of it 
 - Enter `git push`  at the command line to copy your files from your local repository to remote repository (Github, Bitbucket etc).
 - If prompted for authentication, enter your password.
 
+### Bootstrap
+How to use Bootstrap: 
+- [Bootstrap 4 Documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+- [Bootstrap 4 cheatsheet](https://hackerthemes.com/bootstrap-cheatsheet/) 
+
+### PostCSS
+A searchable catalog of PostCSS plugins:
+- [PostCSS](https://www.postcss.parts/)
 
 ## Changelog
 
