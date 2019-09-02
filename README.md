@@ -29,6 +29,7 @@ https://hackerthemes.com/bootstrap-cheatsheet/
   - [index.html](#indexhtml)
   - [.gitkeep](#gitkeep)
   - [.gitignore](#gitignore)
+  - [Git commands](#git-commands)
 - [Changelog](#changelog)
 - [## Authors](#authors)
 - [## License](#license)
