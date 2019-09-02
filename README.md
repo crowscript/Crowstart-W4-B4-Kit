@@ -48,7 +48,7 @@ The main benefit is creating separate files in separate folders, which is excell
 ![webpack](https://img.shields.io/badge/Webpack-v4.29.6-blue.svg)
 ![html](https://img.shields.io/badge/HTML-v5-orange.svg)
 ![sass](https://img.shields.io/badge/SASS-v3.7.3-pink.svg)
-![bootstrap](https://img.shields.io/badge/Bootstrap-v4.3.1-%23563d7c)
+![bootstrap](https://img.shields.io/badge/Bootstrap-4.3.1-%23563d7c.svg)
 ![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)
 
 
