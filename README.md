@@ -1,5 +1,6 @@
 # Crowstart W4-B4 Kit
 ---
+This is a very basic starter kit for project with Bootstrap 4 as a CSS framework and Webpack 4 as a module bundler.
 
 ## Table of Contents   
 ---
@@ -28,7 +29,7 @@
 
 ## About the Project
 ---
-This is a very basic starter for a Bootstrap 4 project with Webpack. When you build the project, you will get in `dist` folder HTML files, where is automatically added `bundle.js` in the bottom of the body and `main.css` in the bottom of head tag.
+This is a very basic starter kit for project with Bootstrap 4 as a CSS framework and Webpack 4 as a module bundler. When you build the project, you will get in `dist` folder HTML files, where is automatically added `bundle.js` in the bottom of the body and `main.css` in the bottom of head tag.
 In dist folder also will be created new folder `assets`, and inside it, three folders `css`, `img`, `js`, and every of these will contain files from your `src` folder.
 Please feel free to clone this starter and change it how is suitable for your project.
 The main benefit is creating separate files in separate folders, which is excellent for basic small projects.
