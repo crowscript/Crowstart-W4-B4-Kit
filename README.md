@@ -13,26 +13,26 @@ https://hackerthemes.com/bootstrap-cheatsheet/
 
 ## Table of Contents   
 ---
-- [# Crowstart W4-B4 Kit](#Crowstart-W4-B4-Kit)
-- [## Table of Contents](#table-of-contents)
-- [## About the Project](#about-the-project)
-- [## Status](#status)
-- [## Directory Structure](#directory-structure)
-- [## Getting Started](#getting-started)
-- [## Built With](#built-with)
+- [Crowstart W4-B4 Kit](#Crowstart-W4-B4-Kit)
+- [Table of Contents](#table-of-contents)
+- [About the Project](#about-the-project)
+- [Status](#status)
+- [Directory Structure](#directory-structure)
+- [Getting Started](#getting-started)
+- [Built With](#built-with)
   - [Requirements](#requirements)
     - [How install Requirements](#how-install-requirements)
   - [Dependencies](#dependencies)
     - [How install Dependencies](#how-install-dependencies)
-- [## How to Use](#how-to-use)
+- [How to Use](#how-to-use)
   - [webpack.config.js](#webpackconfigjs)
   - [index.html](#indexhtml)
   - [.gitkeep](#gitkeep)
   - [.gitignore](#gitignore)
   - [Git commands](#git-commands)
 - [Changelog](#changelog)
-- [## Authors](#authors)
-- [## License](#license)
+- [Authors](#authors)
+- [License](#license)
 
 ## About the Project
 ---
