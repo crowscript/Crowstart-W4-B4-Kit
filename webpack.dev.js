@@ -5,9 +5,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const common = require('./webpack.common');
 const merge = require('webpack-merge');
 
-const imgPath = './assets/img/';
-const jsPath = './assets/js/';
-const cssPath = './assets/css/';
+const imgPath = './img/';
+const jsPath = './js/';
+const cssPath = './css/';
 
 
 module.exports = merge(common, {

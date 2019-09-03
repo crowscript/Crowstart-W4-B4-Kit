@@ -3,9 +3,9 @@ const webpack = require('webpack');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const imgPath = './assets/img/';
-const jsPath = './assets/js/';
-const cssPath = './assets/css/';
+const imgPath = './img/';
+const jsPath = './js/';
+const cssPath = './css/';
 
 module.exports = {
     entry : './src/js/index.js',
