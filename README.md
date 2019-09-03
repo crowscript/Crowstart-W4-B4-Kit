@@ -50,13 +50,12 @@ The main benefit is creating separate files in separate folders, which is excell
 ---
 ```
 ┌── dist // all children folders and files are visible after build
-│   ├── assets
-│   │   ├── css
-│   │   │   └── main.css
-│   │   ├── img
-│   │   │   └── webpack4.jpg
-│   │   └── js
-│   │       └── bundle.js
+│   ├── css
+│   │   └── main.css
+│   ├── img
+│   │   └── webpack4.jpg
+│   ├── js
+│   │   └── bundle.js
 │   ├── about.html
 │   ├── index.html
 │   └── .gitkeep
