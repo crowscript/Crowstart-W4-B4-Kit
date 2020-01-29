@@ -23,8 +23,12 @@ module.exports = merge(common, {
             {
                 test: /\.scss$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
-                    // { loader: 'style-loader', options: { sourceMap: true } },
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                          publicPath: '../', 
+                        },
+                    },
                     { loader: 'css-loader', options: { sourceMap: true } },
                     {
                         loader: 'postcss-loader',
