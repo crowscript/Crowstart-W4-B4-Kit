@@ -3,9 +3,10 @@ const webpack = require('webpack');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const imgPath = './img/';
+const imgPath = './assets/img/';
 const jsPath = './js/';
 const cssPath = './css/';
+const fontsPath = './assets/fonts/';
 
 module.exports = {
     entry : './src/js/index.js',
@@ -39,6 +40,7 @@ module.exports = {
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
+                exclude: /(fonts)/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -47,6 +49,19 @@ module.exports = {
                             outputPath: imgPath
                         },
                     },
+                ]
+            },
+            {
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                exclude: /(images)/,
+                use: [
+                    {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: fontsPath
+                        } 
+                    }
                 ]
             },
             {

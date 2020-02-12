@@ -14,7 +14,7 @@ body {
     font-family: 'Montserrat Alternates', Arial, Helvetica, sans-serif;
     text-align: center;
     color: $red;
-    background: url('../img/webpack4.jpg');
+    background: url('../img/bg.png');
 
     img {
         display: block;
@@ -29,6 +29,10 @@ body {
         color: $yellow;
         background-color: $gray-dark;
         text-decoration: none;
+    }
+
+    h1 {
+        font-family: 'Anton', Arial, Helvetica, sans-serif;
     }
 }
 
