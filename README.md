@@ -50,27 +50,33 @@ The main benefit is creating separate files in separate folders, which is excell
 ---
 ```
 ┌── dist // all children folders and files are visible after build
+│   ├── assets
+│   │   ├── fonts
+│   │   └── img
 │   ├── css
 │   │   └── main.css
-│   ├── img
-│   │   └── webpack4.jpg
 │   ├── js
 │   │   └── bundle.js
 │   ├── about.html
 │   ├── index.html
 │   └── .gitkeep
 ├── src
+│   ├── fonts
+│   │   └── ...
 │   ├── img
+│   │   ├── bg.png
 │   │   └── webpack4.jpg
 │   ├── js
 │   │   ├── index.js
 │   │   ├── main.js
 │   │   └── no-js-files.js
 │   ├── scss
-│   │   ├── css
-│   │   │   └── bootstrap
-│   │   │       ├── bootstrap.scss
-│   │   │       └── variables.scss
+│   │   ├── bootstrap
+│   │   │   └── scss
+│   │   │   │   └── all original bootstrap sass files
+│   │   │   ├── bootstrap.scss
+│   │   │   └── variables.scss
+│   │   ├── fonts.scss
 │   │   ├── index.scss
 │   │   └── main.scss
 │   ├── about.html
