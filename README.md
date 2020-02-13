@@ -183,6 +183,7 @@ If you want to change something in Webpack
 
 ### webpack.config.js
 Here is setup of Webpack. So please before change it, read the documentation of webpack [HERE](https://webpack.js.org/guides)
+If you want to learn Webpack, check Colt Steele Youtube Channel [Colt Steele](https://www.youtube.com/watch?v=3On5Z0gjf4U&list=PLblA84xge2_zwxh3XJqy6UVxS60YdusY8) 
 
 ### index.html
 This is the default HTML skeleton. Keep in mind - javascript and CSS will be automatically added in your HTML after build, so don't add them in `src/index.html` and `src/about.html`
@@ -235,7 +236,7 @@ A searchable catalog of PostCSS plugins:
 
 ## Authors
 ---
-* **Stanislav Vranic** - *Developing* - [@crowscript](http://crowscript.com)
+* **Stanislav Vranic** - *Web Developer* - [@crowscript](http://crowscript.com)
 
 ## License
 ---
