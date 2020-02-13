@@ -229,6 +229,16 @@ How to use Bootstrap:
 A searchable catalog of PostCSS plugins:
 - [PostCSS](https://www.postcss.parts/)
 
+### HTML5 Boilerplate
+[HTML5 Boilerplate](https://html5boilerplate.com/) 
+
+### Modernizr
+Modernizr does three things.
+
+- It adds classes indicating feature support, allowing you to apply different styling to elements depending on what features they support.
+- It allows you to run feature detection to decide whether to run a script/run a polyfill or not.
+- It injects html5shiv, which allows old browsers to understand HTML5 elements.
+
 ## Changelog
 
 **v1.0**

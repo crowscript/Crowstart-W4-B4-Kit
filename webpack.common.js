@@ -40,7 +40,8 @@ module.exports = {
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
-                exclude: /(fonts)/,
+                exclude: [/(fonts)/, /(icons)/],
+
                 use: [
                     {
                         loader: 'file-loader',
@@ -71,6 +72,17 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             name: '.gitkeep',
+                        },
+                    },
+                ]
+            },
+            {
+                test: /\.htaccess$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '.htaccess',
                         },
                     },
                 ]
