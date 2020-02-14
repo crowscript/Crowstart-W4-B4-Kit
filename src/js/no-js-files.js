@@ -7,3 +7,5 @@ import '../img/icons/favicon.ico';
 import '../img/icons/icon.png';
 import '../../.gitkeep';
 import '../.htaccess';
+import '../fonts/Anton-Regular.ttf';
+
