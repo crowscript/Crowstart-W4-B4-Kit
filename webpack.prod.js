@@ -26,7 +26,7 @@ module.exports = merge(common, {
                     {
                         loader: MiniCssExtractPlugin.loader,
                         options: {
-                          publicPath: '../', 
+                          publicPath: '../',
                         },
                     },
                     { loader: 'css-loader', options: { sourceMap: true } },
@@ -42,7 +42,7 @@ module.exports = merge(common, {
                         }
                       },
                     { loader: 'sass-loader', options: { sourceMap: true } }
-                    
+
                 ],
             },
             {
@@ -99,6 +99,6 @@ module.exports = merge(common, {
             }
         }),
     ],
-    
+
 
 });

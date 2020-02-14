@@ -41,7 +41,6 @@ module.exports = {
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 exclude: [/(fonts)/, /(icons)/],
-
                 use: [
                     {
                         loader: 'file-loader',
@@ -61,7 +60,7 @@ module.exports = {
                     options: {
                         name: '[name].[ext]',
                         outputPath: fontsPath
-                        } 
+                        }
                     }
                 ]
             },
@@ -90,12 +89,12 @@ module.exports = {
         ]
     },
     plugins: [
-    
+
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'
           })
     ],
-    
+
 
 }

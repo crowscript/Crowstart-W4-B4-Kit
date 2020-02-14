@@ -2,7 +2,7 @@
 ---
 This is a very basic starter kit for the project with Bootstrap 4 as a CSS framework and Webpack 4 as a module bundler.
 
-## Table of Contents   
+## Table of Contents
 ---
 - [Crowstart W4-B4 Kit](#Crowstart-W4-B4-Kit)
 - [Table of Contents](#table-of-contents)
@@ -21,11 +21,13 @@ This is a very basic starter kit for the project with Bootstrap 4 as a CSS frame
   - [.gitkeep](#gitkeep)
   - [.gitignore](#gitignore)
   - [Git commands](#git-commands)
+    - [Push changes to a Git repository](#push-changes-to-a-git-repository)
   - [Bootstrap](#bootstrap)
   - [PostCSS](#postcss)
-- [Changelog](#changelog)
-- [Authors](#authors)
-- [License](#license)
+  - [HTML5 Boilerplate](#html5-boilerplate)
+  - [editorconfig](#editorconfig)
+  - [Modernizr](#modernizr)
+
 
 ## About the Project
 ---
@@ -37,8 +39,8 @@ The main benefit is creating separate files in separate folders, which is excell
 
 ## Status
 ---
-![node](https://img.shields.io/node/v/webpack.svg) 
-![npm](https://img.shields.io/npm/v/webpack.svg)  ![build](https://img.shields.io/travis/webpack/webpack/master.svg) 
+![node](https://img.shields.io/node/v/webpack.svg)
+![npm](https://img.shields.io/npm/v/webpack.svg)  ![build](https://img.shields.io/travis/webpack/webpack/master.svg)
 ![webpack](https://img.shields.io/badge/Webpack-v4.29.6-blue.svg)
 ![html](https://img.shields.io/badge/HTML-v5-orange.svg)
 ![sass](https://img.shields.io/badge/SASS-v3.7.3-pink.svg)
@@ -110,7 +112,7 @@ These instructions will get you a copy of the project up and running on your loc
 - Your complied css, html, and javascript files will be created and updated in `dist/`. Never edit files within the `dist/` folder, as it gets deleted frequently.
 - When you want to stop the webpack server, hit `ctrl + C`.
 
-	
+
 ## Built With
 ---
 
@@ -173,20 +175,20 @@ Dependencies that need to be installed for building/using your project
 #### How install Dependencies
 All dependencies are will be installed with:
 `
-npm install 
+npm install
 `
 
 ## How to Use
 ---
 Open in your favorite code editor folder **Crowstart-W4-B4-Kit** and start editing files in `src` folder.
-If you want to change something in Webpack 
+If you want to change something in Webpack
 
 ### webpack.config.js
 Here is setup of Webpack. So please before change it, read the documentation of webpack [HERE](https://webpack.js.org/guides)
-If you want to learn Webpack, check Colt Steele Youtube Channel [Colt Steele](https://www.youtube.com/watch?v=3On5Z0gjf4U&list=PLblA84xge2_zwxh3XJqy6UVxS60YdusY8) 
+If you want to learn Webpack, check Colt Steele Youtube Channel [Colt Steele](https://www.youtube.com/watch?v=3On5Z0gjf4U&list=PLblA84xge2_zwxh3XJqy6UVxS60YdusY8)
 
 ### index.html
-This is the default HTML skeleton. Keep in mind - javascript and CSS will be automatically added in your HTML after build, so don't add them in `src/index.html` and `src/about.html`
+This is the default HTML Boilerplate. Keep in mind - javascript and CSS will be automatically added in your HTML after build, so don't add them in `src/index.html` and `src/about.html`
 
 ### .gitkeep
 This is the file to keep empty folder in Github commit.
@@ -221,23 +223,32 @@ in `.gitignore` file in the line 59 you can find  **Build Systems** below of it 
 - If prompted for authentication, enter your password.
 
 ### Bootstrap
-How to use Bootstrap: 
+How to use Bootstrap:
 - [Bootstrap 4 Documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
-- [Bootstrap 4 cheatsheet](https://hackerthemes.com/bootstrap-cheatsheet/) 
+- [Bootstrap 4 cheatsheet](https://hackerthemes.com/bootstrap-cheatsheet/)
 
 ### PostCSS
 A searchable catalog of PostCSS plugins:
 - [PostCSS](https://www.postcss.parts/)
 
 ### HTML5 Boilerplate
-[HTML5 Boilerplate](https://html5boilerplate.com/) 
+[HTML5 Boilerplate](https://html5boilerplate.com/)
+
+### editorconfig
+[editorconfig](https://editorconfig.org/)
 
 ### Modernizr
-Modernizr does three things.
+Modernizr is not installed in this starter. If you need it `npm i modernizr`
+Modernizr does three things:
 
 - It adds classes indicating feature support, allowing you to apply different styling to elements depending on what features they support.
 - It allows you to run feature detection to decide whether to run a script/run a polyfill or not.
-- It injects html5shiv, which allows old browsers to understand HTML5 elements.
+- It injects html5shiv, which allows old browsers to understand HTML5 elements. `npm i html5shiv`
+```
+<!--[if lt IE 9]>
+    <script src="../html5shiv/dist/html5shiv.js"></script>
+<![endif]-->
+```
 
 ## Changelog
 
@@ -253,8 +264,4 @@ Modernizr does three things.
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 [Choose the License](https://choosealicense.com/)
 
-
 **[Back to top](#table-of-contents)**
-
-
-
