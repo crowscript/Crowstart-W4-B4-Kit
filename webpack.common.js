@@ -86,6 +86,32 @@ module.exports = {
                     },
                 ]
             },
+            // Favicon
+            {
+                test: /\.(ico)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: '/'
+                        },
+                    },
+                ]
+            },
+            {
+                test: /icon\.png$/,
+                exclude: /(images)/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: '/'
+                        },
+                    },
+                ]
+            },
         ]
     },
     plugins: [
