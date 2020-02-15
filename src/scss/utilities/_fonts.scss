@@ -1,0 +1,34 @@
+// ==========================================================================
+// $FONT-FACE
+// ==========================================================================
+
+@if variable-exists(google-fonts-url) {
+    @import url($google-fonts-url);
+  }
+
+  @if variable-exists(typefaces) {
+    @each $file, $option in $typefaces {
+      @font-face {
+        font-family: map-get(map-get($typefaces, $file), family);
+        font-style: map-get(map-get($typefaces, $file), style);
+        font-weight: map-get(map-get($typefaces, $file), weight);
+        src:    url('../fonts/Anton-Regular.eot');
+        src:    url('../fonts/#{$file}.eot?#iefix') format('embedded-opentype'),
+                url('../fonts/#{$file}.ttf') format('truetype'),
+                url('../fonts/#{$file}.woff2') format('woff2'),
+                url('../fonts/#{$file}.woff') format('woff'),
+                url('../fonts/#{$file}.svg##{$file}') format('svg');
+      }
+    }
+  }
+
+  @font-face {
+    font-family: 'Anton';
+    src: url('../fonts/Anton-Regular.eot');
+    src: url('../fonts/Anton-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Anton-Regular.woff2') format('woff2'),
+        url('../fonts/Anton-Regular.woff') format('woff'),
+        url('../fonts/Anton-Regular.svg#Anton-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

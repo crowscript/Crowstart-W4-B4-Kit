@@ -1,14 +1,50 @@
-// colors
-$linen: #ECE2D0;
-$gray-dark: #424B54;
-$yellow: #FFCB3A;
-$red: #C05746;
-$green: #23CE6B;
 
-$bg-color: $linen;
-$btn-bg-color: $yellow;
+@viewport { width: device-width; }
 
-    
+html {
+  background-color: $color-background;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+* {
+  &:before,
+  &:after { box-sizing: inherit; }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: $color-text;
+  font-family: $font-family-default;
+  min-height: 100%;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  background: transparent;
+  color: $color-link;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-display;
+  font-weight: normal;
+}
+
+/////from main
+
 body {
     font-size: 1rem;
     padding: 0 0 2em 0;
@@ -51,6 +87,4 @@ body {
     user-select: none;
 }
 
-@import "bootstrap/variables";
-
-
+// @import "bootstrap/variables";

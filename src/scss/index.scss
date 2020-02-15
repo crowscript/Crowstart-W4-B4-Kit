@@ -1,5 +1,22 @@
-// Bootstrap scss
+@charset "utf-8";
+// Contents:
 
+// 01. Normalize ( COMPASS, Variables, Functions, Mixins, etc... )
+// 02. Bootstrap
+// 03. Custom CSS
+// 03. Base ( regular elements )
+// 04. Layout ( layout template, grid structure )
+// 05. Modules ( modules, background, colors, typography.. )
+// 06. States
+// 07. @font-face
+// 08. Print
+
+// SMACSS - The toolkit uses recommendations from and Scalable and Modular Architecture for CSS (SMACSS) http://smacss.com/book
+
+// 01. Normalize
+@import "utilities/vendor/normalize";
+
+// Bootstrap scss
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
@@ -27,7 +44,7 @@
 @import "node_modules/bootstrap/scss/alert";
 @import "node_modules/bootstrap/scss/progress";
 @import "node_modules/bootstrap/scss/media";
-@import "node_modules/bootstrap/scss/list-group"; 
+@import "node_modules/bootstrap/scss/list-group";
 @import "node_modules/bootstrap/scss/close";
 @import "node_modules/bootstrap/scss/toasts";
 @import "node_modules/bootstrap/scss/modal";
@@ -38,6 +55,50 @@
 @import "node_modules/bootstrap/scss/utilities";
 @import "node_modules/bootstrap/scss/print";
 
-@import "fonts";
+// Custom CSS
 
-@import "main";
+// Contents:
+
+// 01. Utilities ( COMPASS, Variables, Functions, Mixins, etc... )
+// 02. Libraries
+// 03. Base ( regular elements )
+// 04. Layout ( layout template, grid structure )
+// 05. Modules ( modules, background, colors, typography.. )
+// 06. States
+// 07. @font-face
+// 08. Print
+// 09. Shame
+
+// SMACSS
+//
+// The toolkit uses recommendations from and Scalable and Modular Architecture for CSS (SMACSS) http://smacss.com/book
+
+// ==========================================================================
+// $Utilities
+// ==========================================================================
+@import "utilities/index"; // Variables, mixins, grid-system, etc.
+
+// ==========================================================================
+// $Base
+// // ==========================================================================
+@import 'base/index';
+
+// // ==========================================================================
+// // $Layout
+// // ==========================================================================
+@import 'layout/index';
+
+// // ==========================================================================
+// // $Modules
+// // ==========================================================================
+@import 'modules/index';
+
+// // ==========================================================================
+// // $States
+// // ==========================================================================
+@import 'states/index';
+
+// // ==========================================================================
+// // $Themes
+// // ==========================================================================
+@import 'themes/index';
