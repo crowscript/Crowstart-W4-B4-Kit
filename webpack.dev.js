@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const globImporter = require('node-sass-glob-importer');
 
 const common = require('./webpack.common');
 const merge = require('webpack-merge');
@@ -34,8 +35,8 @@ module.exports = merge(common, {
                     { loader: 'style-loader', options: { sourceMap: true } },
                     { loader: 'css-loader', options: { sourceMap: true } },
                     { loader: 'postcss-loader', options: { sourceMap: true } },
-                    { loader: 'sass-loader', options: { sourceMap: true } }
-                    
+                    { loader: 'sass-loader', options: { sourceMap: true, importer: globImporter() } }
+
                 ],
             },
 
@@ -46,7 +47,7 @@ module.exports = merge(common, {
         //     filename: '' + cssPath + '[name].css',
         //     chunkFilename: '' + cssPath + '[id].css',
         // }),
- 
+
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: './index.html'
@@ -55,8 +56,8 @@ module.exports = merge(common, {
             template: './src/about.html',
             filename: './about.html'
         }),
- 
+
     ],
-    
+
 
 });

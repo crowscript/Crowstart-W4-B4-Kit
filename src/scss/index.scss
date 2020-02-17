@@ -1,22 +1,21 @@
 @charset "utf-8";
 // Contents:
 
-// 01. Normalize ( COMPASS, Variables, Functions, Mixins, etc... )
+// 01. Vendor (Normalize, ...)
 // 02. Bootstrap
 // 03. Custom CSS
-// 03. Base ( regular elements )
-// 04. Layout ( layout template, grid structure )
-// 05. Modules ( modules, background, colors, typography.. )
-// 06. States
-// 07. @font-face
-// 08. Print
+//  03.1 Utilities ( COMPASS, Variables, Functions, Mixins, etc... )
+//  03.2 Base ( regular elements )
+//  03.3 Layout ( layout template, grid structure )
+//  03.4 Modules ( modules, background, colors, typography.. )
+//  03.5 States
+//  03.6 Themes
 
-// SMACSS - The toolkit uses recommendations from and Scalable and Modular Architecture for CSS (SMACSS) http://smacss.com/book
 
-// 01. Normalize
-@import "utilities/vendor/normalize";
+// 01. Vendor / Normalize
+@import "utilities/vendor/*.scss";
 
-// Bootstrap scss
+// 02. Bootstrap
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
@@ -55,23 +54,9 @@
 @import "node_modules/bootstrap/scss/utilities";
 @import "node_modules/bootstrap/scss/print";
 
-// Custom CSS
+// 03. Custom CSS
 
-// Contents:
-
-// 01. Utilities ( COMPASS, Variables, Functions, Mixins, etc... )
-// 02. Libraries
-// 03. Base ( regular elements )
-// 04. Layout ( layout template, grid structure )
-// 05. Modules ( modules, background, colors, typography.. )
-// 06. States
-// 07. @font-face
-// 08. Print
-// 09. Shame
-
-// SMACSS
-//
-// The toolkit uses recommendations from and Scalable and Modular Architecture for CSS (SMACSS) http://smacss.com/book
+// SMACSS - The toolkit uses recommendations from and Scalable and Modular Architecture for CSS (SMACSS) http://smacss.com/book
 
 // ==========================================================================
 // $Utilities

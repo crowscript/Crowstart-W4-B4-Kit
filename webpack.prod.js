@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const globImporter = require('node-sass-glob-importer');
 
 const common = require('./webpack.common');
 const merge = require('webpack-merge');
@@ -41,7 +42,7 @@ module.exports = merge(common, {
                           minimize: true
                         }
                       },
-                    { loader: 'sass-loader', options: { sourceMap: true } }
+                    { loader: 'sass-loader', options: { sourceMap: true, importer: globImporter() } }
 
                 ],
             },
