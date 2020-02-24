@@ -57,8 +57,10 @@ module.exports = merge(common, {
         new CleanWebpackPlugin(),
 
         new HtmlWebpackPlugin({
+            title: 'Index Page',
             template: './src/index.html',
             filename: './index.html',
+            inject: true,
             minify: {
                 removeComments: true,
                 collapseWhitespace: true,
