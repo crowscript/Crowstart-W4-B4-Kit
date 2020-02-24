@@ -66,6 +66,8 @@ The main benefit is creating separate files in separate folders, which is excell
 │   ├── fonts
 │   │   └── ...
 │   ├── img
+│   │   │── icons
+│   │   │   └── favicon.ico
 │   │   ├── bg.png
 │   │   └── webpack4.jpg
 │   ├── js
@@ -73,16 +75,38 @@ The main benefit is creating separate files in separate folders, which is excell
 │   │   ├── main.js
 │   │   └── no-js-files.js
 │   ├── scss
-│   │   ├── bootstrap
-│   │   │   └── scss
-│   │   │   │   └── all original bootstrap sass files
-│   │   │   ├── bootstrap.scss
-│   │   │   └── variables.scss
-│   │   ├── fonts.scss
-│   │   ├── index.scss
-│   │   └── main.scss
+│   │   ├── base
+│   │   │   ├── base.scss
+│   │   │   └── index.scss
+│   │   ├── layout
+│   │   │   └── bootstrap
+│   │   │   │   ├── scss
+│   │   │   │   │   └── all bootstrap scss from node_modules
+│   │   │   │   └── variables_custom.scss
+│   │   │   └── index.scss
+│   │   ├── modules
+│   │   │   └── index.scss
+│   │   ├── states
+│   │   │   ├── index.scss
+│   │   │   └── print.scss
+│   │   ├── themes
+│   │   │   └── index.scss
+│   │   ├── utilities
+│   │   │   └── vendor
+│   │   │   │   └── normalize.scss
+│   │   │   ├── colors.scss
+│   │   │   ├── config.scss
+│   │   │   ├── fonts.scss
+│   │   │   ├── functions.scss
+│   │   │   ├── index.scss
+│   │   │   ├── mixins.scss
+│   │   │   └── typography.scss
+│   │   └── index.scss
+│   ├── .htacces
+│   ├── 404.html
 │   ├── about.html
 │   └── index.html
+├── .editorconfig
 ├── .gitignore
 ├── .gitkeep
 ├── LICENSE
