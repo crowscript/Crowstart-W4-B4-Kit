@@ -59,9 +59,12 @@ The main benefit is creating separate files in separate folders, which is excell
 │   │   └── main.css
 │   ├── js
 │   │   └── bundle.js
+│   ├── .gitkeep
+│   ├── .htacces
 │   ├── about.html
-│   ├── index.html
-│   └── .gitkeep
+│   ├── favicon.ico
+│   ├── icon.png
+│   └── index.html
 ├── src
 │   ├── fonts
 │   │   └── ...

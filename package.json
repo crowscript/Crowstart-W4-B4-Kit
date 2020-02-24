@@ -1,7 +1,7 @@
 {
-  "name": "webpack-4-bootstrap-4-starter-kit",
+  "name": "bootstrap-4-webpack-4-starter-kit",
   "version": "1.0.0",
-  "description": "This is a starter kit of Webpack 4 with Bootstrap 4",
+  "description": "This is a starter kit of Bootstrap 4 and Webpack 4",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server  --config webpack.dev.js --open chrome --watch",
